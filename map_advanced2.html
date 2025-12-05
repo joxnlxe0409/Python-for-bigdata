@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d9ad29f04c08db72e90243a1652119ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d9ad29f04c08db72e90243a1652119ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d9ad29f04c08db72e90243a1652119ae = L.map(
+                "map_d9ad29f04c08db72e90243a1652119ae",
+                {
+                    center: [37.4882, 126.82813333333333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": false,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_d9ad29f04c08db72e90243a1652119ae);
+
+            
+
+        
+    
+            var tile_layer_86028b90ef46d080644a059b501f370f = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_86028b90ef46d080644a059b501f370f.addTo(map_d9ad29f04c08db72e90243a1652119ae);
+        
+    
+            var marker_e2a1bf0d610f654acaa328022a3ac844 = L.marker(
+                [37.5007, 126.8677],
+                {
+}
+            ).addTo(map_d9ad29f04c08db72e90243a1652119ae);
+        
+    
+            var icon_abcdd8de7d087113d050ecf1dbad274a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_130b61dce05249ebb96450b3e2855d3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8a1e43c160517fb0dd7b59a4e59c61e = $(`<div id="html_d8a1e43c160517fb0dd7b59a4e59c61e" style="width: 100.0%; height: 100.0%;"><b>동양미래대학교</b></div>`)[0];
+                popup_130b61dce05249ebb96450b3e2855d3c.setContent(html_d8a1e43c160517fb0dd7b59a4e59c61e);
+            
+        
+
+        marker_e2a1bf0d610f654acaa328022a3ac844.bindPopup(popup_130b61dce05249ebb96450b3e2855d3c)
+        ;
+
+        
+    
+    
+            marker_e2a1bf0d610f654acaa328022a3ac844.bindTooltip(
+                `<div>
+                     동양미래대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e2a1bf0d610f654acaa328022a3ac844.setIcon(icon_abcdd8de7d087113d050ecf1dbad274a);
+            
+    
+            var marker_152afeb08969ce4d5434f7247d0299e7 = L.marker(
+                [37.4888, 126.9669],
+                {
+}
+            ).addTo(map_d9ad29f04c08db72e90243a1652119ae);
+        
+    
+            var icon_49639071285d5640e74f4076c93d9a85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_be51453ab488999c7c05e863e62a0381 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70bdcaade752b56a57d78dd7ce31df22 = $(`<div id="html_70bdcaade752b56a57d78dd7ce31df22" style="width: 100.0%; height: 100.0%;"><b>총신대학교</b></div>`)[0];
+                popup_be51453ab488999c7c05e863e62a0381.setContent(html_70bdcaade752b56a57d78dd7ce31df22);
+            
+        
+
+        marker_152afeb08969ce4d5434f7247d0299e7.bindPopup(popup_be51453ab488999c7c05e863e62a0381)
+        ;
+
+        
+    
+    
+            marker_152afeb08969ce4d5434f7247d0299e7.bindTooltip(
+                `<div>
+                     총신대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_152afeb08969ce4d5434f7247d0299e7.setIcon(icon_49639071285d5640e74f4076c93d9a85);
+            
+    
+            var marker_c97d47f3d9cf8cd32c292df4c925c0e7 = L.marker(
+                [37.4751, 126.6498],
+                {
+}
+            ).addTo(map_d9ad29f04c08db72e90243a1652119ae);
+        
+    
+            var icon_1b7e69cb2f96d7b75e1a7c7116fbf561 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab69b52008435e7f5fece7048b63f9d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c6915ee24ed97b0c8677d3498585a07 = $(`<div id="html_4c6915ee24ed97b0c8677d3498585a07" style="width: 100.0%; height: 100.0%;"><b>재능대학교</b></div>`)[0];
+                popup_ab69b52008435e7f5fece7048b63f9d0.setContent(html_4c6915ee24ed97b0c8677d3498585a07);
+            
+        
+
+        marker_c97d47f3d9cf8cd32c292df4c925c0e7.bindPopup(popup_ab69b52008435e7f5fece7048b63f9d0)
+        ;
+
+        
+    
+    
+            marker_c97d47f3d9cf8cd32c292df4c925c0e7.bindTooltip(
+                `<div>
+                     재능대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c97d47f3d9cf8cd32c292df4c925c0e7.setIcon(icon_1b7e69cb2f96d7b75e1a7c7116fbf561);
+            
+    
+            var poly_line_5e7d5f5f7919c7e0b74bf800093b41e0 = L.polyline(
+                [[37.5007, 126.8677], [37.4888, 126.9669], [37.4751, 126.6498]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_d9ad29f04c08db72e90243a1652119ae);
+        
+    
+            var tile_layer_04c905b25fdb1bedfa2d8e789ce077b9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_f68487ae3de52390c202bfc0067e3ccd = new L.Control.MiniMap(
+                tile_layer_04c905b25fdb1bedfa2d8e789ce077b9,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_d9ad29f04c08db72e90243a1652119ae.addControl(mini_map_f68487ae3de52390c202bfc0067e3ccd);
+        
+</script>
+</html>

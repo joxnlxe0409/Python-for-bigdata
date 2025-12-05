@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_95e01c0e55a2b50eeacf0e72518d93dc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_95e01c0e55a2b50eeacf0e72518d93dc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_95e01c0e55a2b50eeacf0e72518d93dc = L.map(
+                "map_95e01c0e55a2b50eeacf0e72518d93dc",
+                {
+                    center: [37.4882, 126.82813333333333],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_29c36b73dd758ac51f9b89916fa6a5d8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_29c36b73dd758ac51f9b89916fa6a5d8.addTo(map_95e01c0e55a2b50eeacf0e72518d93dc);
+        
+    
+            var marker_cluster_ba16c409e10cb43c421de092f7ceeca0 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_6d14fa5fd8f31189fcfeaff70ba9d2ef = L.marker(
+                [37.5007, 126.8677],
+                {
+}
+            ).addTo(marker_cluster_ba16c409e10cb43c421de092f7ceeca0);
+        
+    
+        var popup_6fff322279794ef177ebafba06153a1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d3d276357b00617db3a57e88ed41748 = $(`<div id="html_3d3d276357b00617db3a57e88ed41748" style="width: 100.0%; height: 100.0%;"><b>동양미래대학교</b></div>`)[0];
+                popup_6fff322279794ef177ebafba06153a1f.setContent(html_3d3d276357b00617db3a57e88ed41748);
+            
+        
+
+        marker_6d14fa5fd8f31189fcfeaff70ba9d2ef.bindPopup(popup_6fff322279794ef177ebafba06153a1f)
+        ;
+
+        
+    
+    
+            marker_6d14fa5fd8f31189fcfeaff70ba9d2ef.bindTooltip(
+                `<div>
+                     동양미래대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3ef59bab740f797f19a2e8a4ce817439 = L.marker(
+                [37.4888, 126.9669],
+                {
+}
+            ).addTo(marker_cluster_ba16c409e10cb43c421de092f7ceeca0);
+        
+    
+        var popup_b288f8248a40e077978554fe5dc45340 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_578b44ac4277075015c42ca97eb75d0b = $(`<div id="html_578b44ac4277075015c42ca97eb75d0b" style="width: 100.0%; height: 100.0%;"><b>총신대학교</b></div>`)[0];
+                popup_b288f8248a40e077978554fe5dc45340.setContent(html_578b44ac4277075015c42ca97eb75d0b);
+            
+        
+
+        marker_3ef59bab740f797f19a2e8a4ce817439.bindPopup(popup_b288f8248a40e077978554fe5dc45340)
+        ;
+
+        
+    
+    
+            marker_3ef59bab740f797f19a2e8a4ce817439.bindTooltip(
+                `<div>
+                     총신대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c3ca61b23beb146d51305cdd92ba5049 = L.marker(
+                [37.4751, 126.6498],
+                {
+}
+            ).addTo(marker_cluster_ba16c409e10cb43c421de092f7ceeca0);
+        
+    
+        var popup_f2b32fb33c5a9120a66daee0aee7da93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3505c0102f31a62e26f1cad5b8755b1f = $(`<div id="html_3505c0102f31a62e26f1cad5b8755b1f" style="width: 100.0%; height: 100.0%;"><b>재능대학교</b></div>`)[0];
+                popup_f2b32fb33c5a9120a66daee0aee7da93.setContent(html_3505c0102f31a62e26f1cad5b8755b1f);
+            
+        
+
+        marker_c3ca61b23beb146d51305cdd92ba5049.bindPopup(popup_f2b32fb33c5a9120a66daee0aee7da93)
+        ;
+
+        
+    
+    
+            marker_c3ca61b23beb146d51305cdd92ba5049.bindTooltip(
+                `<div>
+                     재능대학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_ba16c409e10cb43c421de092f7ceeca0.addTo(map_95e01c0e55a2b50eeacf0e72518d93dc);
+        
+    
+            var tile_layer_bd35d37856d2e9db8beeb6f1cd760f3a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_6bdde4da4e0348392225a3f6c08da008 = new L.Control.MiniMap(
+                tile_layer_bd35d37856d2e9db8beeb6f1cd760f3a,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": true,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_95e01c0e55a2b50eeacf0e72518d93dc.addControl(mini_map_6bdde4da4e0348392225a3f6c08da008);
+        
+</script>
+</html>
